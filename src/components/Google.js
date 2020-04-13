@@ -46,11 +46,7 @@ const Google = () => {
             <div className="container">
                 <img src={image} alt="..." className='responsive-img'/>
                 <p className="flow-text">
-                   { email === 'shivanibarhelass@gmail.com' ? <Fragment>
-                       <span className="red-text">Welcome Moti</span>
-                   </Fragment> : <Fragment>
-                   Welcome {name}
-                   </Fragment> }
+                Welcome {name}
                    <br/>
                    { email }
                 </p>
