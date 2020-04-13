@@ -46,9 +46,13 @@ const Google = () => {
             <div className="container">
                 <img src={image} alt="..." className='responsive-img'/>
                 <p className="flow-text">
+                   { email === 'shivanibarhelass@gmail.com' ? <Fragment>
+                       <span className="red-text">Welcome Moti</span>
+                   </Fragment> : <Fragment>
                    Welcome {name}
+                   </Fragment> }
                    <br/>
-                   {email}
+                   { email }
                 </p>
                 <br/>
                 <GoogleLogout clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID} buttonText='Logout' onLogoutSuccess={logout} />
